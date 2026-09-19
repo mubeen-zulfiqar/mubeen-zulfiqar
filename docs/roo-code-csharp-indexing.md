@@ -10,19 +10,7 @@ The issue investigated in the pull request was C# code failing to receive the ex
 
 ## Change
 
-I changed the C# queries so declaration names and their enclosing definitions were captured separately. For example, the class query changed from:
-
-```scheme
-(class_declaration
-  name: (identifier) @name.definition.class)
-```
-
-to:
-
-```scheme
-(class_declaration
-  name: (identifier) @name) @definition.class
-```
+I changed the C# queries so declaration names and their enclosing definitions were captured separately.
 
 The distinction is the node being captured: the identifier supplies the name, while the enclosing class supplies the full definition. The change was not a general prohibition on dots in Tree-sitter capture names.
 
