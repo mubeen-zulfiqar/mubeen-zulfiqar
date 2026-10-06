@@ -6,17 +6,16 @@
 <p>I build AI workflows that connect models, tools, and business systems.</p>
 
 <p>
-  <a href="https://www.linkedin.com/in/mubeen-zulfiqar"><img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/linkedin.svg" alt="Connect on LinkedIn" width="104" height="34"></a>
-  <a href="https://drive.google.com/file/d/1WkNC8-vRv_u8e2tcJ8SZ8TXcuWxAO0uQ/view?usp=sharing"><img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/cv.svg" alt="Read my CV" width="64" height="34"></a>
-  <a href="https://www.upwork.com/freelancers/mubeenzr"><img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/upwork.svg" alt="View my Upwork profile" width="104" height="34"></a>
-  <a href="https://github.com/RooCodeInc/Roo-Code/pull/7813"><img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/contribution.svg" alt="View my merged Roo Code contribution" width="190" height="34"></a>
+  <a href="https://www.linkedin.com/in/mubeen-zulfiqar"><img src="assets/badges/linkedin.svg" alt="Connect on LinkedIn" width="112" height="36"></a>
+  <a href="https://drive.google.com/file/d/1WkNC8-vRv_u8e2tcJ8SZ8TXcuWxAO0uQ/view?usp=sharing"><img src="assets/badges/cv.svg" alt="Read my CV" width="112" height="36"></a>
+  <a href="https://www.upwork.com/freelancers/mubeenzr"><img src="assets/badges/upwork.svg" alt="View my Upwork profile" width="112" height="36"></a>
 </p>
 
 <p><sub>Lahore, Pakistan</sub></p>
 
 </div>
 
-Three years of professional experience across Python automation, data science, and AI engineering, from requirements through production support. Since June 2025, my work at CodeNinja, assigned to 3E, has focused on agentic workflows and multi-agent systems.
+My work spans Python automation, data science, and AI engineering, from requirements through production support. Since June 2025, I have worked at CodeNinja, assigned to 3E, focusing on agentic workflows and multi-agent systems.
 
 ## Featured open-source contribution
 
@@ -26,33 +25,26 @@ Corrected C# Tree-sitter queries so Roo Code's existing indexing pipeline could 
 
 [Explore the technical case study →](https://github.com/mubeen-zulfiqar/mubeen-zulfiqar/blob/main/docs/roo-code-csharp-indexing.md)
 
-## What I build
-
-- **Agent workflows:** tool use, orchestration, and explicit escalation boundaries, from ticket analysis to implementation and review.
-- **System integrations:** MCP tools and A2A workflows that connect business systems, including legacy applications with existing interfaces and data stores.
-- **Retrieval and automation:** RAG, vector embeddings, tracing, retries, and reconciliation, with monitoring that helps diagnose failures and guide recovery.
-
 ## Selected professional work
 
 *Source code and demos for these professional systems are not public.*
 
 **InterOp Agent for Legacy Systems**  
-Built an A2A agent on AWS EC2 to synchronize two enterprise systems more than 15 years old without modifying either application. Used SQL MCP integrations, change detection, retries, monitoring, and reconciliation.
+Synchronized two enterprise systems more than 15 years old without modifying either application. I built an A2A agent on AWS EC2 with SQL MCP integrations, change detection, retries, monitoring, and reconciliation.
 
 **Self-Orchestrating SDLC Framework**  
-Built a four-agent workflow with the Claude Agent SDK and AWS Lambda for ticket analysis, branching, implementation and PR creation, and feedback-driven learning. Added custom MCP tools, Langfuse tracing, Jira markers, and escalation guardrails.
+Connected ticket analysis, branching, implementation, and PR creation in a four-agent workflow. I built it with the Claude Agent SDK and AWS Lambda, adding custom MCP tools, Langfuse tracing, Jira markers, escalation guardrails, and feedback-driven learning.
 
 ## Tools and capabilities
 
 <p>
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/python.svg" alt="Python" width="86" height="28">
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/claude-agent-sdk.svg" alt="Claude Agent SDK" width="164" height="28">
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/mcp.svg" alt="Model Context Protocol (MCP)" width="68" height="28">
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/a2a.svg" alt="Agent-to-Agent (A2A)" width="66" height="28">
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/rag.svg" alt="Retrieval-Augmented Generation (RAG)" width="66" height="28">
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/aws.svg" alt="Amazon Web Services (AWS)" width="68" height="28">
-  <img src="https://raw.githubusercontent.com/mubeen-zulfiqar/mubeen-zulfiqar/main/assets/badges/langfuse.svg" alt="Langfuse" width="108" height="28">
+  <img src="assets/badges/python.svg" alt="Python" width="96" height="32">
+  <img src="assets/badges/aws.svg" alt="Amazon Web Services (AWS)" width="92" height="32">
+  <img src="assets/badges/claude-agent-sdk.svg" alt="Claude Agent SDK" width="166" height="32">
+  <img src="assets/badges/langfuse.svg" alt="Langfuse" width="112" height="32">
 </p>
+
+**Capabilities:** MCP tool integrations · Agent-to-Agent (A2A) workflows · Retrieval-Augmented Generation (RAG) · Python automation
 
 <details>
 <summary><strong>Experience, education &amp; earlier work</strong></summary>
@@ -72,6 +64,6 @@ Built a four-agent workflow with the Claude Agent SDK and AWS Lambda for ticket 
 
 ### Earlier learning projects
 
-My original public repositories contain programming, computer vision, machine-learning, and software-testing work from 2023–2024. They remain available as historical learning projects; the professional work above describes my current focus.
+My original public repositories contain programming, computer vision, machine-learning, and software-testing work from 2020–2024. They remain available as historical learning projects; the professional work above describes my current focus.
 
 </details>
