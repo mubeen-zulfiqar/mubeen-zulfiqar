@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="208" viewBox="0 0 420 208" role="img" aria-labelledby="title desc">
+  <title id="title">Meet Mubeen Zulfiqar</title>
+  <desc id="desc">Hi, I’m Mubeen. I build agentic AI systems and reliable automation. I connect models, tools, and business workflows.</desc>
+  <style>
+    .bubble { fill: #f3f4f6; stroke: #d0d7de; }
+    text { fill: #24292f; font: 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .greeting { fill: #0969da; font-weight: 600; }
+    .dot { fill: #57606a; }
+    .message { opacity: 1; animation: reveal .25s ease-out both; }
+    .message-1 { animation-delay: .65s; }
+    .message-2 { animation-delay: 2s; }
+    .message-3 { animation-delay: 3.5s; }
+    .typing { opacity: 0; animation: typing .65s linear forwards; }
+    .typing-2 { animation-delay: 1.35s; }
+    .typing-3 { animation-delay: 2.85s; }
+    .typing .dot { animation: pulse .45s ease-in-out 2; }
+    .typing .dot:nth-of-type(2) { animation-delay: .12s; }
+    .typing .dot:nth-of-type(3) { animation-delay: .24s; }
+    .typing-2 .dot { animation-delay: 1.35s; }
+    .typing-2 .dot:nth-of-type(2) { animation-delay: 1.47s; }
+    .typing-2 .dot:nth-of-type(3) { animation-delay: 1.59s; }
+    .typing-3 .dot { animation-delay: 2.85s; }
+    .typing-3 .dot:nth-of-type(2) { animation-delay: 2.97s; }
+    .typing-3 .dot:nth-of-type(3) { animation-delay: 3.09s; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes typing { 0%, 90% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    @media (prefers-color-scheme: dark) {
+      .bubble { fill: #161b22; stroke: #484f58; }
+      text { fill: #e6edf3; }
+      .greeting { fill: #79c0ff; }
+      .dot { fill: #8b949e; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .message { animation: none; opacity: 1; transform: none; }
+      .typing { animation: none; opacity: 0; }
+      .typing .dot { animation: none; }
+    }
+  </style>
+  <g transform="translate(12 6)">
+    <g class="typing typing-1">
+      <rect class="bubble" width="76" height="42" rx="16"/>
+      <circle class="dot" cx="24" cy="21" r="3.5"/><circle class="dot" cx="38" cy="21" r="3.5"/><circle class="dot" cx="52" cy="21" r="3.5"/>
+    </g>
+    <g class="message message-1">
+      <rect class="bubble" width="184" height="42" rx="16"/>
+      <text class="greeting" x="16" y="27">Hi, I’m Mubeen.</text>
+    </g>
+  </g>
+  <g transform="translate(12 60)">
+    <g class="typing typing-2">
+      <rect class="bubble" width="76" height="42" rx="16"/>
+      <circle class="dot" cx="24" cy="21" r="3.5"/><circle class="dot" cx="38" cy="21" r="3.5"/><circle class="dot" cx="52" cy="21" r="3.5"/>
+    </g>
+    <g class="message message-2">
+      <rect class="bubble" width="340" height="64" rx="16"/>
+      <text x="16" y="27"><tspan x="16">I build agentic AI systems </tspan><tspan x="16" dy="24">and reliable automation.</tspan></text>
+    </g>
+  </g>
+  <g transform="translate(12 136)">
+    <g class="typing typing-3">
+      <rect class="bubble" width="76" height="42" rx="16"/>
+      <circle class="dot" cx="24" cy="21" r="3.5"/><circle class="dot" cx="38" cy="21" r="3.5"/><circle class="dot" cx="52" cy="21" r="3.5"/>
+    </g>
+    <g class="message message-3">
+      <rect class="bubble" width="358" height="64" rx="16"/>
+      <text x="16" y="27"><tspan x="16">I connect models, tools, </tspan><tspan x="16" dy="24">and business workflows.</tspan></text>
+    </g>
+  </g>
+</svg>

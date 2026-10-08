@@ -3,7 +3,7 @@
 <h1>Mubeen Zulfiqar</h1>
 <h3>AI Engineer · Agentic Systems &amp; Automation</h3>
 
-<p>I build AI workflows that connect models, tools, and business systems.</p>
+<p><img src="assets/intro.svg" alt="Hi, I’m Mubeen. I build agentic AI systems and reliable automation. I connect models, tools, and business workflows." width="420" height="208"></p>
 
 <p>
   <a href="https://www.linkedin.com/in/mubeen-zulfiqar"><img src="assets/badges/linkedin.svg" alt="Connect on LinkedIn" width="112" height="36"></a>
@@ -19,30 +19,40 @@ My work spans Python automation, data science, and AI engineering, from requirem
 
 ## Featured open-source contribution
 
-**Roo Code · C# codebase indexing**
+### Roo Code · C# codebase indexing
 
 Corrected C# Tree-sitter queries so Roo Code's existing indexing pipeline could capture full syntax definitions alongside their names. The patch also handled simple and qualified namespace names; [PR #7813](https://github.com/RooCodeInc/Roo-Code/pull/7813) was merged on **September 15, 2025**.
 
-[Explore the technical case study →](https://github.com/mubeen-zulfiqar/mubeen-zulfiqar/blob/main/docs/roo-code-csharp-indexing.md)
+[Merged PR #7813](https://github.com/RooCodeInc/Roo-Code/pull/7813) · [Technical case study →](https://github.com/mubeen-zulfiqar/mubeen-zulfiqar/blob/main/docs/roo-code-csharp-indexing.md)
 
 ## Selected professional work
 
 *Source code and demos for these professional systems are not public.*
 
-**InterOp Agent for Legacy Systems**  
-Synchronized two enterprise systems more than 15 years old without modifying either application. I built an A2A agent on AWS EC2 with SQL MCP integrations, change detection, retries, monitoring, and reconciliation.
+### InterOp Agent for Legacy Systems
 
-**Self-Orchestrating SDLC Framework**  
-Connected ticket analysis, branching, implementation, and PR creation in a four-agent workflow. I built it with the Claude Agent SDK and AWS Lambda, adding custom MCP tools, Langfuse tracing, Jira markers, escalation guardrails, and feedback-driven learning.
+**Purpose:** Synchronize two enterprise systems more than 15 years old without modifying either application.
+
+**Approach:** I built an A2A agent on AWS EC2 with SQL MCP integrations, change detection, retries, monitoring, and reconciliation.
+
+### Self-Orchestrating SDLC Framework
+
+**Purpose:** Connect ticket analysis, branching, implementation, and PR creation in a four-agent workflow.
+
+**Approach:** I built it with the Claude Agent SDK and AWS Lambda, adding custom MCP tools, Langfuse tracing, Jira markers, escalation guardrails, and feedback-driven learning.
 
 ## Tools and capabilities
 
-<p>
-  <img src="assets/badges/python.svg" alt="Python" width="96" height="32">
-  <img src="assets/badges/aws.svg" alt="Amazon Web Services (AWS)" width="92" height="32">
-  <img src="assets/badges/claude-agent-sdk.svg" alt="Claude Agent SDK" width="166" height="32">
-  <img src="assets/badges/langfuse.svg" alt="Langfuse" width="112" height="32">
-</p>
+<table>
+  <tr>
+    <td align="center" width="140"><img src="assets/icons/python.svg" alt="Python" width="40" height="40"><br><strong>Python</strong></td>
+    <td align="center" width="140"><img src="assets/icons/aws.svg" alt="Amazon Web Services (AWS)" width="40" height="40"><br><strong>AWS</strong></td>
+  </tr>
+  <tr>
+    <td align="center" width="140"><img src="assets/icons/claude-agent-sdk.svg" alt="Claude Agent SDK" width="40" height="40"><br><strong>Claude Agent SDK</strong></td>
+    <td align="center" width="140"><img src="assets/icons/langfuse.svg" alt="Langfuse" width="40" height="40"><br><strong>Langfuse</strong></td>
+  </tr>
+</table>
 
 **Capabilities:** MCP tool integrations · Agent-to-Agent (A2A) workflows · Retrieval-Augmented Generation (RAG) · Python automation
 

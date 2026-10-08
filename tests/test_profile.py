@@ -1,6 +1,7 @@
 """Validate profile assets without network calls or dependencies."""
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 import unittest
 import xml.etree.ElementTree as ET
 
@@ -29,17 +30,40 @@ class ProfileTests(unittest.TestCase):
                 self.assertEqual(int(svg.attrib['width']), int(image['width']))
                 self.assertEqual(int(svg.attrib['height']), int(image['height']))
 
-    def test_badges_are_self_contained_accessible_svg(self):
-        for path in (ROOT / 'assets/badges').glob('*.svg'):
+    def test_assets_are_self_contained_accessible_svg(self):
+        for path in (ROOT / 'assets').rglob('*.svg'):
             with self.subTest(path=path.name):
                 svg = ET.parse(path).getroot()
                 self.assertEqual(svg.attrib.get('role'), 'img')
                 self.assertTrue(svg.find('{http://www.w3.org/2000/svg}title').text)
+                self.assertGreater(float(svg.attrib['width']), 0)
+                self.assertGreater(float(svg.attrib['height']), 0)
+                ids = {node.attrib['id'] for node in svg.iter() if 'id' in node.attrib}
+                for label in svg.attrib['aria-labelledby'].split():
+                    self.assertIn(label, ids)
+                source = path.read_text()
+                self.assertNotRegex(source, r'(?i)url\s*\(|@import|@font-face')
                 for node in svg.iter():
                     self.assertNotIn(node.tag.rsplit('}', 1)[-1], ['script', 'foreignObject', 'image'])
                     for attr in node.attrib:
                         self.assertFalse(attr.rsplit('}', 1)[-1].startswith('on'))
                         self.assertNotEqual(attr.rsplit('}', 1)[-1], 'href')
+
+    def test_intro_has_finite_timeline_and_motion_alternative(self):
+        svg = ET.parse(ROOT / 'assets/intro.svg').getroot()
+        messages = [node for node in svg.iter()
+                    if 'message' in node.attrib.get('class', '').split()]
+        self.assertEqual(len(messages), 3)
+        style = svg.find('{http://www.w3.org/2000/svg}style').text
+        self.assertNotIn('infinite', style)
+        delays = [float(value) for value in re.findall(
+            r'\.message-\d+\s*\{\s*animation-delay:\s*([\d.]+)s', style)]
+        duration = float(re.search(r'animation:\s*reveal\s+([\d.]+)s', style)[1])
+        self.assertEqual(len(delays), len(messages))
+        self.assertLessEqual(max(delays) + duration, 5)
+        reduced = style.split('@media (prefers-reduced-motion: reduce)', 1)[1]
+        self.assertRegex(reduced, r'\.message\s*\{[^}]*animation: none;[^}]*opacity: 1;')
+        self.assertRegex(reduced, r'\.typing\s*\{[^}]*animation: none;[^}]*opacity: 0;')
 
     def test_capabilities_are_text_and_work_disclosure_is_present(self):
         text = (ROOT / 'README.md').read_text()
