@@ -65,12 +65,24 @@ class ProfileTests(unittest.TestCase):
         self.assertRegex(reduced, r'\.message\s*\{[^}]*animation: none;[^}]*opacity: 1;')
         self.assertRegex(reduced, r'\.typing\s*\{[^}]*animation: none;[^}]*opacity: 0;')
 
-    def test_capabilities_are_text_and_work_disclosure_is_present(self):
+    def test_capability_text_and_work_disclosure_are_present(self):
         text = (ROOT / 'README.md').read_text()
-        for capability in ['MCP', 'A2A', 'RAG']:
+        for capability in ['RAG']:
             self.assertIn(capability, text)
             self.assertNotIn(f'badges/{capability.lower()}.svg', text)
         self.assertIn('Source code and demos for these professional systems are not public.', text)
+
+    def test_tools_have_twelve_unique_local_32px_badges(self):
+        text = (ROOT / 'README.md').read_text()
+        section = text.split('## Tools and capabilities', 1)[1].split('<details>', 1)[0]
+        images = Images(section).images
+        self.assertEqual(len(images), 12)
+        self.assertEqual(len({image['src'] for image in images}), 12)
+        for image in images:
+            with self.subTest(image=image['src']):
+                self.assertTrue(image['src'].startswith('assets/badges/'))
+                self.assertEqual(image['height'], '32')
+                self.assertGreater(int(image['width']), 0)
 
 if __name__ == '__main__':
     unittest.main()

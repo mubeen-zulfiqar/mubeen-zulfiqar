@@ -43,18 +43,22 @@ Corrected C# Tree-sitter queries so Roo Code's existing indexing pipeline could 
 
 ## Tools and capabilities
 
-<table>
-  <tr>
-    <td align="center" width="140"><img src="assets/icons/python.svg" alt="Python" width="40" height="40"><br><strong>Python</strong></td>
-    <td align="center" width="140"><img src="assets/icons/aws.svg" alt="Amazon Web Services (AWS)" width="40" height="40"><br><strong>AWS</strong></td>
-  </tr>
-  <tr>
-    <td align="center" width="140"><img src="assets/icons/claude-agent-sdk.svg" alt="Claude Agent SDK" width="40" height="40"><br><strong>Claude Agent SDK</strong></td>
-    <td align="center" width="140"><img src="assets/icons/langfuse.svg" alt="Langfuse" width="40" height="40"><br><strong>Langfuse</strong></td>
-  </tr>
-</table>
+<p>
+  <img src="assets/badges/python.svg" alt="Python" width="96" height="32">
+  <img src="assets/badges/claude-agent-sdk.svg" alt="Claude Agent SDK" width="166" height="32">
+  <img src="assets/badges/openai-agents-sdk.svg" alt="OpenAI Agents SDK" width="176" height="32">
+  <img src="assets/badges/strands-agents.svg" alt="Strands Agents" width="138" height="32">
+  <img src="assets/badges/mcp.svg" alt="Model Context Protocol (MCP)" width="84" height="32">
+  <img src="assets/badges/a2a.svg" alt="Agent-to-Agent (A2A)" width="84" height="32">
+  <img src="assets/badges/langfuse.svg" alt="Langfuse" width="112" height="32">
+  <img src="assets/badges/aws.svg" alt="Amazon Web Services (AWS)" width="92" height="32">
+  <img src="assets/badges/git.svg" alt="Git" width="72" height="32">
+  <img src="assets/badges/docker.svg" alt="Docker" width="102" height="32">
+  <img src="assets/badges/opencv.svg" alt="OpenCV" width="108" height="32">
+  <img src="assets/badges/scikit-learn.svg" alt="scikit-learn" width="126" height="32">
+</p>
 
-**Capabilities:** MCP tool integrations · Agent-to-Agent (A2A) workflows · Retrieval-Augmented Generation (RAG) · Python automation
+**Capabilities:** Multi-agent orchestration · runtime tool development and reuse · MCP & A2A · SQL & Jira integrations · RAG · AWS EC2 & Lambda · Langfuse tracing & model-call logging · retries, reconciliation & escalation guardrails · Python automation · ML & computer vision.
 
 <details>
 <summary><strong>Experience, education &amp; earlier work</strong></summary>
